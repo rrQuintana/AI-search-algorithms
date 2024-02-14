@@ -52,7 +52,7 @@ if __name__=='__main__':
     # m.run()
 
 
-    m=maze(12,10)
+    m=maze(20,20)
     # m.CreateMaze(5,4,loopPercent=100)
     m.CreateMaze(loopPercent=10,theme='light')
     bSearch,bfsPath,fwdPath=BFS(m)
@@ -60,8 +60,8 @@ if __name__=='__main__':
     b=agent(m,footprints=True,color=COLOR.red,shape='square',filled=False)
     # c=agent(m,5,4,footprints=True,color=COLOR.cyan,shape='square',filled=True,goal=(m.rows,m.cols))
     c=agent(m,1,1,footprints=True,color=COLOR.cyan,shape='square',filled=True,goal=(m.rows,m.cols))
-    m.tracePath({a:bSearch},delay=100)
-    m.tracePath({c:bfsPath},delay=100)
-    m.tracePath({b:fwdPath},delay=100)
+    m.tracePath({a:bSearch},delay=5)
+    m.tracePath({c:bfsPath},delay=5)
+    m.tracePath({b:fwdPath},delay=5)
 
     m.run()

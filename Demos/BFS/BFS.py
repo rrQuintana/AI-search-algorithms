@@ -31,7 +31,7 @@ def BFS(m):
     return fwdPath
 
 if __name__=='__main__':
-    m=maze(15,10)
+    m=maze(50,50)
     m.CreateMaze(loopPercent=40)
     path=BFS(m)
 

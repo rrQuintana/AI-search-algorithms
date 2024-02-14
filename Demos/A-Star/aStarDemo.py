@@ -50,7 +50,7 @@ def aStar(m,start=None):
     return searchPath,aPath,fwdPath
 
 if __name__=='__main__':
-    m=maze(4,4)
+    m=maze(15,15)
     m.CreateMaze()
 
     searchPath,aPath,fwdPath=aStar(m)

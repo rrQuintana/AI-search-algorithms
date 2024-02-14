@@ -1,0 +1,25 @@
+# Breadth First Search (BFS)
+# Búsqueda en anchura o Búsqueda preferente por amplitud.
+
+![Maze Cell Indices](https://i0.wp.com/www.apascualco.com/wp-content/uploads/2019/09/bfs.png?fit=772%2C869&ssl=1)
+
+- Empieza en la entrada del laberinto.
+- Explora todas las casillas que están al lado de la entrada.
+- Luego, explora todas las casillas que están al lado de las casillas que ya exploraste, y así sucesivamente.
+- Sigue explorando hasta que encuentres la salida o hasta que hayas explorado todas las casillas del laberinto.
+
+Es como si estuvieras expandiendo una burbuja desde la entrada del laberinto. La burbuja se expande hasta que encuentra la salida o hasta que no hay más espacio para expandirse.
+
+### ¿Por qué usar la Búsqueda en Amplitud?
+Es una forma sencilla y eficiente de encontrar la ruta más corta entre dos puntos en un grafo.
+Se puede usar para encontrar el camino más corto entre dos ciudades en un mapa, o para encontrar la ruta más rápida para llegar a un destino en un juego.
+También se puede usar para encontrar todos los elementos que están conectados a un elemento dado en un grafo.
+
+### Ventajas:
+Es fácil de entender e implementar.
+Es eficiente para encontrar la ruta más corta entre dos puntos.
+Se puede usar para encontrar todos los elementos que están conectados a un elemento dado en un grafo.
+
+### Desventajas:
+Puede ser lento para encontrar la solución en grafos grandes.
+No siempre encuentra la ruta óptima (la más corta).
